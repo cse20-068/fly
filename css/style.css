@@ -114,5 +114,16 @@ span.top-icon {
     color: blue!important;
     font-weight: 600;
 }
+form .form-control{
+    border-radius: 0;
+
+}
+form .form-control:focus{
+    box-shadow: none;
+    border-color: #E93b81;
+}
+#cta{
+    background-color: #E93b81;
+}
 
 
