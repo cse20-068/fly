@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body>
+    <div class="OTP">
+
+    <h1>
+        Dear Passenger , Your OTP for the  REGISTRATION FOR THE FLIGHT IS   <span id="OTP"></span>
+
+    </h1>
+    </div>
+    <br>
+    <button type="button" onclick="generate()"> Generate OTP</button>
+
+
+    <script>
+          function generate(){
+              let num='1234567890';
+              let OTP= '';
+
+
+              for (let i =0; i<4;i++){
+
+                OTP += num[Math.floor(Math.random()*10)]; /* random method 0 to 1*/
+
+              }
+
+              document.getElementById('OTP').innerHTML= OTP;
+          }
+
+
+    </script>
+</body>
+</html>

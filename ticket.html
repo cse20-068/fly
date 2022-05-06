@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/modals/">
+
+          <!--Favicon-->
+  <link rel="shortcut icon" href="img/Airplane-Wallpapers-76-images-.jpg">
+  <!--End of favicon-->
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/modals.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar nav-pills navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"/>
+        </svg>
+        <img src="img/" alt="">
+        <span class="fs-4">WeFlyHigh</span>
+      </a>
+      <div class="container">
+        <img src="" alt="">
+        <a href="index.html" class="navbar-brand">WeFlyHigh</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expand="false" aria-lable="Togle navigation">
+          <span class="navbar-toggler-icon"></span>
+  
+        </button>
+        <div class="collapse navbar-collapse " id="navMenu">
+          <ul class="navbar-nav ms-auto text-center ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#flights">Flights</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#help">Help</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#book">Book</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#countries">Countries</a>
+            </li>
+          </ul>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+<div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-5 shadow">
+      <div>
+        <h1 class="text-center" style="font-family: 'Times New Roman', Times, serif; color: blue;">Ticket</h1>
+      </div>
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <h2 class="fw-bold mb-0">Place a Ticket</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Ticket Number</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Amount</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Flight No</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Class</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">FlightDate</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">FlightTime</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Origin</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Destination</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Submit</button>
+          <small class="text-muted">By clicking Submit, you agree to the terms of use.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+            Sign up with Twitter
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+            Sign up with GitHub
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top container-fluid-fill bg-secondary mt-5">
+    <div class=" bg-secondary">
+      <div class="row gy-5 mt-5">
+        <div class="col-md-4">
+          <h4 class="logo-text">WeFlyHigh</h4>
+          <p>Would you like to complete an extra lap in the 718 Cayman GT4 RS? Discover more details here.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5 class="title-sm">Navigation</h5>
+          <div class="footer-links">
+            <a href="#">Services</a>
+            <a href="#">Our work</a>
+            <a href="lo">Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5 class="title-sm">More</h5>
+          <div class="footer-links">
+            <a href="#">FAQ's</a>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Liscences</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5 class="title-sm">contact</h5>
+          <div class="footer-links">
+            <p class="mb">1664 Norman Street, Los Angeles, 9001</p>
+            <p class="mb">71472963</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container-fluid-fill bg-primary">
+    <div class="container">
+      <div class="row justify-content-between gy-3">
+        <div class="col-md-6">
+          <p class="mb-5">Copyright © 2022-WeFlyHigh. All rights reserved.</p>
+        </div>
+        <div class="col-auto">
+          <p class="mb-0">Created by Vincent</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="b-example-divider"></div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
