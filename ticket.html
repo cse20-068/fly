@@ -69,9 +69,6 @@
               <a class="nav-link" href="ticket.html">Ticket</a>
             </li>
           </ul>
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-          </form>
         </div>
       </div>
     </nav>
@@ -90,35 +87,35 @@
       <div class="modal-body p-5 pt-0">
         <form class="">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <input type="number" class="form-control rounded-4" id="floatingInput" placeholder="name">
             <label for="floatingInput">Ticket Number</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <input type="amount" class="form-control rounded-4" id="floatingInput" placeholder="amount">
             <label for="floatingInput">Amount</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <input type="name" class="form-control rounded-4" id="floatingInput" placeholder="name">
             <label for="floatingInput">Name</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <input type="number" class="form-control rounded-4" id="floatingInput" placeholder="number">
             <label for="floatingInput">Flight No</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <input type="class" class="form-control rounded-4" id="floatingInput" placeholder="class">
             <label for="floatingInput">Class</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <input type="date" class="form-control rounded-4" id="floatingPassword" placeholder="date">
             <label for="floatingPassword">FlightDate</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <input type="time" class="form-control rounded-4" id="floatingPassword" placeholder="time">
             <label for="floatingPassword">FlightTime</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <input type="origin" class="form-control rounded-4" id="floatingorigin" placeholder="origin">
             <label for="floatingPassword">Origin</label>
           </div>
           <div class="form-floating mb-3">
@@ -132,54 +129,86 @@
     </div>
   </div>
 </div>
+<h2 class="mt-5">Display Of Results</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Flight Name </th>
+      <th scope="col">FLight ID </th>
+      <th scope="col">Origon of FLight</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Times</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Portuguse Airlines</th>
+      <td>FID-1</td>
+      <td>Portugal</td>
+      <td>Mexico</td>
+      <td>1500CAT</td>
+      <td>27/03/2022</td>
+    </tr>
+    <tr>
+      <th scope="row">Dutch Airways</th>
+      <td>FID-2</td>
+      <td>Netherlands</td>
+      <td>Turkey</td>
+      <td>1000CAT</td>
+      <td>20/01/2022</td>
+    </tr>
+    <tr>
+      <th scope="row">Austrian Air</th>
+      <td >GIF-4</td>
+      <td>Austria</td>
+      <td>Belgium</td>
+      <td>0040CAT</td>
+      <td>12/07/2022</td>
+    </tr>
+    <tr>
+      <th scope="row">Air Belgium</th>
+      <td >GIF-4</td>
+      <td>Belgium</td>
+      <td>Spain</td>
+      <td>2340CAT</td>
+      <td>04/08/2022</td>
+    </tr>
+    <tr>
+      <th scope="row">Croatian Pacific</th>
+      <td >GIF-4</td>
+      <td>Croatia</td>
+      <td>Netherlands</td>
+      <td>1400CAT</td>
+      <td>27/08/2022</td>
+    </tr>
+    <tr>
+      <th scope="row">Turkish Airlines</th>
+      <td >GSF-6</td>
+      <td>Turkey</td>
+      <td>Belgium</td>
+      <td>1700CAT</td>
+      <td>24/01/2022</td>
+    </tr>
+    <tr>
+      <th scope="row">Air Russia</th>
+      <td >GTR-41</td>
+      <td>Russia</td>
+      <td>South Africa</td>
+      <td>2200CAT</td>
+      <td>13/07/2022</td>
+    </tr>
+  </tbody>
+</table>
 <footer>
-  <div class="footer-top container-fluid-fill bg-secondary mt-5">
-    <div class=" bg-secondary">
-      <div class="row gy-5 mt-5">
-        <div class="col-md-4">
-          <h4 class="logo-text container-fluid">WeFlyHigh</h4>
-          <div class="social-icons">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-github"></i></a>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <h5 class="title-sm">Navigation</h5>
-          <div class="footer-links">
-            <a href="#">Services</a>
-            <a href="#">Our work</a>
-            <a href="lo">Team</a>
-            <a href="#">Blog</a>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <h5 class="title-sm">More</h5>
-          <div class="footer-links">
-            <a href="#">FAQ's</a>
-            <a href="#">Privacy & Policy</a>
-            <a href="#">Liscences</a>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <h5 class="title-sm">contact</h5>
-          <div class="footer-links">
-            <p class="mb">1664 Norman Street, Los Angeles, 9001</p>
-            <p class="mb">71472963</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom container-fluid-fill bg-primary">
+  <div class="footer-bottom container-fluid-fill bg-dark mt-5">
     <div class="container">
       <div class="row justify-content-between gy-3">
         <div class="col-md-6">
-          <p class="mb-5">Copyright © 2022-WeFlyHigh. All rights reserved.</p>
+          <p class="mb-5 text-light">Copyright © 2022-WeFlyHigh. All rights reserved.</p>
         </div>
         <div class="col-auto">
-          <p class="mb-0">Created by Vincent</p>
+          <p class="mb-0 text-light">Created by WeFlyHigh</p>
         </div>
       </div>
     </div>
@@ -187,10 +216,6 @@
 </footer>
 
 <div class="b-example-divider"></div>
-
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-      
+    <script src="js/bootstrap.bundle.min.js"></script> 
   </body>
 </html>

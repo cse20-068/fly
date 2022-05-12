@@ -22,6 +22,14 @@ h1,h2,h3,h4,h5,h6{
     text-transform: none;
     color: #1ba0ec; 
 }
+#more {display: none;
+}
+#myBtn{
+    margin-bottom: 2%;
+    margin-left: 45%;
+    background-color: #e5f049;
+}
+
 .btn{
     position: relative;
     padding: 11px;
