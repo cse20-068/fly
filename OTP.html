@@ -2,36 +2,46 @@
 
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="shortcut icon" href="img/Airplane-Wallpapers-76-images-.jpg">
+</head>
 
-<body>
-    <div class="OTP">
+<body style="color: navy; background: rgb(216, 216, 216); margin-top: 10%;">
 
-    <h1>
-        Dear Passenger , Your OTP for the  REGISTRATION FOR THE FLIGHT IS   <span id="OTP"></span>
-
-    </h1>
-    </div>
-    <br>
-    <button type="button" onclick="generate()"> Generate OTP</button>
-
-
-    <script>
-          function generate(){
-              let num='1234567890';
-              let OTP= '';
-
-
-              for (let i =0; i<4;i++){
-
-                OTP += num[Math.floor(Math.random()*10)]; /* random method 0 to 1*/
-
-              }
-
-              document.getElementById('OTP').innerHTML= OTP;
-          }
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <div class="OTP">
+                    <h1 class="text-center" style="font-family: 'Times New Roman', Times, serif;">OTP VERIFICATION</h1>
+                <p>
+                    Dear Passenger , Your OTP for the Registration for the flight   <span id="OTP"></span>
+                </p>
+                </div>
+            <hr>
+            <button type="button" onclick="generate()"> Generate OTP</button>
+                <script>
+                    function generate(){
+                        let num='1234567890';
+                        let OTP= '';
 
 
-    </script>
-</body>
+                        for (let i =0; i<4;i++){
+
+                            OTP += num[Math.floor(Math.random()*10)]; /* random method 0 to 1*/
+
+                        }
+
+                        document.getElementById('OTP').innerHTML= OTP;
+                    }
+                </script>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="img/OTP-Authentication.jpg" alt="">
+                </div>
+            </div>
+         </div>
+    </body>
 </html>

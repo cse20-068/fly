@@ -49,5 +49,7 @@ form .form-control:focus{
 #cta{
     background-color: #E93b81;
 }
-
-
+form{
+    display: block;
+    margin-top: 0em;
+}
